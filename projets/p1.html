@@ -52,42 +52,82 @@
         </div>
       </div>
       <div class="project-content">
-        <div class="content-part">
-          <h2>Contexte</h2>
-          <p>
-            Le projet vise à développer un programme de classification
-            automatique de nouvelles qui est fiable et rapide. Nous classons ces
-            articles dans l'une des cinq catégories suivantes :
-            ENVIRONNEMENT-SCIENCE, CULTURE, ÉCONOMIE, POLITIQUE et SPORTS, en
-            utilisant des lexiques manuels et automatiques pour optimiser les
-            performances et réduire le temps d'exécution.
-          </p>
-        </div>
-        <div class="content-part">
-          <h2>Objectifs</h2>
-          <p>Les objectifs principaux de ce projet incluent :</p>
-          <ul>
-            <li>Développer des lexiques manuels et automatiques</li>
-            <li>
-              Classifier automatiquement les dépêches dans les catégories
-              pertinentes
-            </li>
-            <li>
-              Optimiser le programme pour augmenter la performance et réduire le
-              temps d'exécution
-            </li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Résultats</h2>
-          <p>
-            Les résultats montrent une nette amélioration de la rapidité de
-            classification avec les lexiques automatiques. Les tests indiquent
-            que la version optimisée du programme peut traiter des dépêches plus
-            rapidement, avec un temps moyen d'exécution réduit à 350ms sur 10
-            essais, se rapprochant de notre objectif de 0ms.
-          </p>
-        </div>
+        <h2>Contexte</h2>
+        <p>
+          Durant ma première année en BUT informatique, j'ai réalisé un projet
+          en binôme visant à répondre aux besoins d'un client fictif : un site
+          de presse souhaitant trier automatiquement ses articles en fonction de
+          leur catégorie (sciences, économie, politique, etc.). Ce projet
+          consistait à développer un logiciel capable de trier les articles en
+          se basant uniquement sur leurs dépêches associées, afin de faciliter
+          l'archivage des publications.
+        </p>
+
+        <h2>Objectifs</h2>
+        <p>Les objectifs principaux de ce projet incluaient :</p>
+        <ul>
+          <li>
+            Développer des lexiques manuels et automatiques pour optimiser les
+            performances du programme.
+          </li>
+          <li>
+            Classifier automatiquement les dépêches dans les catégories
+            pertinentes : environnement-science, culture, économie, politique et
+            sports.
+          </li>
+          <li>
+            Optimiser le programme pour augmenter la performance et réduire le
+            temps d'exécution.
+          </li>
+        </ul>
+
+        <h2>Réalisation</h2>
+        <p>
+          Nous avons débuté par la création manuelle des lexiques. Chaque
+          lexique contenait une liste de mots spécifiques à une catégorie, avec
+          des poids associés indiquant l'importance de chaque mot pour la
+          catégorie donnée. Par exemple, le lexique de la catégorie sports
+          comprenait des mots comme "match", "joueur", chacun avec un poids
+          défini.
+        </p>
+        <p>
+          Ensuite, nous avons développé le programme pour charger ces lexiques
+          en mémoire et les utiliser pour calculer un score pour chaque dépêche
+          en fonction des mots qu'elle contient. Le programme attribue à chaque
+          dépêche la catégorie ayant le score le plus élevé.
+        </p>
+        <p>
+          Dans la seconde partie du projet, nous avons automatisé la génération
+          des lexiques. Nous avons développé une méthode d’apprentissage
+          automatique pour analyser les dépêches et extraire les mots les plus
+          représentatifs de chaque catégorie. Nous avons calculé des scores pour
+          les mots en fonction de leur fréquence et de leur spécificité dans
+          chaque catégorie, puis nous avons attribué des poids à ces mots.
+        </p>
+        <p>
+          Enfin, nous avons optimisé le programme en améliorant les temps de
+          traitement grâce à des méthodes de tri et en utilisant des threads
+          pour paralléliser la génération des lexiques et la classification des
+          dépêches.
+        </p>
+
+        <h2>Résultats/Conclusion</h2>
+        <p>
+          Les résultats finaux ont montré une nette amélioration de la rapidité
+          et de la précision de la classification avec les lexiques
+          automatiques. Les tests ont indiqué que la version optimisée du
+          programme pouvait traiter les dépêches plus rapidement, avec un temps
+          moyen d'exécution réduit à 350ms sur 10 essais, se rapprochant de
+          notre objectif initial.
+        </p>
+        <p>
+          En conclusion, bien que les résultats soient satisfaisants, il reste
+          des possibilités d'amélioration. Nous pourrions optimiser davantage le
+          programme en ajoutant des méthodes de tri et des recherches optimisées
+          chaque fois que cela est nécessaire et possible. Pour la partie
+          manuelle, les lexiques devraient être plus longs, avec environ 80 à
+          100 lignes, pour obtenir de meilleurs résultats.
+        </p>
       </div>
     </main>
     <footer>
