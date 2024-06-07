@@ -578,21 +578,13 @@ div.project-image {
   display: flex;
   justify-content: center;
   max-width: 700px;
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.75s ease-in;
 }
 
 div.project-image img {
   width: 500px;
   height: 500px;
-  transition: 0.5s;
-}
-
-div.project-image img:hover {
-  transform: scale(1.1);
-}
-
-div.project-image img:active {
-  transform: scale(1);
+  transition: 0.75s;
 }
 
 .project-content {
