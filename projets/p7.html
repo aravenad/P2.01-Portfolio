@@ -55,39 +55,168 @@
         </div>
       </div>
       <div class="project-content">
-        <div class="content-part">
-          <h2>Contexte</h2>
-          <p>
-            Le but de ce projet est de comparer les performances de différents
-            algorithmes de tri. Pour cela, nous avons implémenté les algorithmes
-            suivants :
-          </p>
-          <ul>
-            <li>Tri à bulles</li>
-            <li>Tri par sélection</li>
-            <li>Tri par insertion</li>
-            <li>Tri rapide</li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Objectifs</h2>
-          <p>Les objectifs de ce projet sont les suivants :</p>
-          <ul>
-            <li>Implémenter les algorithmes de tri</li>
-            <li>Comparer les performances des algorithmes</li>
-            <li>Écrire un rapport sur les résultats obtenus</li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Résultats</h2>
-          <p>
-            Les résultats de notre étude montrent que le tri rapide est le plus
-            performant des algorithmes testés. En effet, il est capable de trier
-            un tableau de 1 million d'entiers en moins de 1 seconde, alors que
-            les autres algorithmes prennent plusieurs minutes pour effectuer la
-            même tâche.
-          </p>
-        </div>
+        <h2>Contexte</h2>
+        <p>
+          Dans le cadre de ma formation en BUT informatique, j'ai participé à un
+          projet intitulé "Exploitation d’une base de données". Ce projet visait
+          à sensibiliser les étudiants à une mission typique de Data Science en
+          utilisant une base de données de produits alimentaires. Le projet a
+          été réalisé en binôme et comprenait plusieurs phases, allant de
+          l'exploration et du nettoyage des données à la production de
+          graphiques et à la rédaction d'un rapport en anglais.
+        </p>
+
+        <h2>Objectifs</h2>
+        <p>Les objectifs principaux de ce projet étaient :</p>
+        <ul>
+          <li>
+            Explorer et nettoyer une base de données contenant des informations
+            sur des produits alimentaires.
+          </li>
+          <li>
+            Extraire les données utiles et les préparer pour une analyse plus
+            approfondie.
+          </li>
+          <li>
+            Produire des graphiques et des visualisations pour répondre à des
+            questions spécifiques sur les données.
+          </li>
+          <li>
+            Rédiger un rapport en anglais expliquant les résultats de l'analyse
+            et des visualisations produites.
+          </li>
+        </ul>
+
+        <h2>Réalisation</h2>
+        <p><strong>Phase 1 : Exploration et Nettoyage des Données</strong></p>
+        <ol>
+          <li>
+            <strong>Préparation de l'Environnement de Travail :</strong>
+            <ul>
+              <li>
+                Travail en environnement Windows en raison de l'utilisation
+                intensive des stations Linux par d'autres étudiants.
+              </li>
+              <li>
+                Connexion à une station Linux via TigerVNC pour accéder au
+                serveur PostgreSQL si nécessaire.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Exploration des Données :</strong>
+            <ul>
+              <li>
+                Utilisation de requêtes SQL pour explorer les valeurs des champs
+                pertinents.
+              </li>
+              <li>
+                Utilisation des clauses <code>LIMIT</code> et
+                <code>OFFSET</code> pour gérer la quantité de données
+                visualisée.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Nettoyage des Données :</strong>
+            <ul>
+              <li>
+                Suppression des doublons et des lignes contenant des valeurs
+                impossibles.
+              </li>
+              <li>
+                Ajout de champs supplémentaires pour faciliter le traitement des
+                informations (ex : champs pour indiquer si un produit est bio,
+                vegan, etc.).
+              </li>
+              <li>
+                Vérification de l'exactitude des codes-barres et des valeurs
+                nutritionnelles.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Extraction des Données :</strong>
+            <ul>
+              <li>
+                Création de tables temporaires pour stocker les données
+                nettoyées et pertinentes.
+              </li>
+              <li>Exportation des données nettoyées dans un fichier CSV.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><strong>Phase 2 : Production des Graphiques</strong></p>
+        <ol>
+          <li>
+            <strong>Création des Visualisations :</strong>
+            <ul>
+              <li>
+                Utilisation de logiciels et de bibliothèques de visualisation de
+                données pour créer des graphiques pertinents.
+              </li>
+              <li>
+                Réponse à des questions spécifiques sur les produits
+                alimentaires à l'aide des graphiques produits.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Analyse des Résultats :</strong>
+            <ul>
+              <li>
+                Interprétation des graphiques et des données pour tirer des
+                conclusions sur les tendances observées.
+              </li>
+              <li>Comparaison des résultats avec les attentes initiales.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><strong>Phase 3 : Rédaction du Rapport</strong></p>
+        <ol>
+          <li>
+            <strong>Rédaction en Anglais :</strong>
+            <ul>
+              <li>
+                Rédaction d'un rapport en anglais expliquant le processus
+                d'exploration, de nettoyage, et d'analyse des données.
+              </li>
+              <li>
+                Présentation des graphiques et des conclusions de manière claire
+                et structurée.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Soumission du Rapport :</strong>
+            <ul>
+              <li>
+                Vérification de la conformité du rapport avec les attentes et
+                les exigences de l'équipe pédagogique.
+              </li>
+              <li>Soumission du rapport final dans les délais impartis.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>Résultats/Conclusion</h2>
+        <p>
+          Le projet a permis de nettoyer et d'exploiter efficacement une base de
+          données de produits alimentaires, d'en extraire des informations
+          pertinentes, et de produire des visualisations claires et
+          informatives. Le rapport final rédigé en anglais a présenté de manière
+          structurée les étapes suivies et les résultats obtenus.
+        </p>
+        <p>
+          En conclusion, ce projet a démontré l'importance de l'exploration et
+          du nettoyage des données dans tout projet de Data Science. Les
+          compétences acquises en manipulation de données, en production de
+          graphiques, et en rédaction technique en anglais sont essentielles
+          pour tout informaticien travaillant dans le domaine de l'analyse de
+          données.
+        </p>
       </div>
     </main>
     <footer>
