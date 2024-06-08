@@ -44,26 +44,7 @@
     <main class="contact-main">
       <div class="contact-container">
         <h2>Contactez-moi</h2>
-        <form
-          class=""
-          id="contactForm"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="apikey"
-            value="61864700-9761-42b2-b931-828670c60667"
-          />
-          <input type="hidden" name="subject" value="New contact submission" />
-          <input type="hidden" name="from_name" value="Portfolio" />
-          <input type="hidden" name="redirect" value="./success.html" />
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="hidden"
-            style="display: none"
-          />
+        <form action="https://formspree.io/f/xgegjjja" method="POST">
           <div class="form-group">
             <div class="label-group">
               <label class="reveal-8" for="last_name">Nom</label>
@@ -110,7 +91,6 @@
             rows="5"
             required
           ></textarea>
-
           <button type="submit">Envoyer</button>
         </form>
       </div>
