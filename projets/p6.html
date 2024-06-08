@@ -48,46 +48,181 @@
           <h1>Installation de services réseau</h1>
         </div>
         <div class="project-image">
-          <img src="../img/project1.webp" alt="project1" />
+          <img src="../img/project6.webp" alt="project1" />
         </div>
         <div class="scroll-down">
           <img src="../img/arrow-scroll-down.png" alt="Scroll Down" />
         </div>
       </div>
       <div class="project-content">
-        <div class="content-part">
-          <h2>Contexte</h2>
-          <p>
-            Le but de ce projet est de comparer les performances de différents
-            algorithmes de tri. Pour cela, nous avons implémenté les algorithmes
-            suivants :
-          </p>
-          <ul>
-            <li>Tri à bulles</li>
-            <li>Tri par sélection</li>
-            <li>Tri par insertion</li>
-            <li>Tri rapide</li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Objectifs</h2>
-          <p>Les objectifs de ce projet sont les suivants :</p>
-          <ul>
-            <li>Implémenter les algorithmes de tri</li>
-            <li>Comparer les performances des algorithmes</li>
-            <li>Écrire un rapport sur les résultats obtenus</li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Résultats</h2>
-          <p>
-            Les résultats de notre étude montrent que le tri rapide est le plus
-            performant des algorithmes testés. En effet, il est capable de trier
-            un tableau de 1 million d'entiers en moins de 1 seconde, alors que
-            les autres algorithmes prennent plusieurs minutes pour effectuer la
-            même tâche.
-          </p>
-        </div>
+        <h2>Contexte</h2>
+        <p>
+          Dans le cadre de ma formation en BUT informatique, j'ai participé à un
+          projet intitulé "Installation de services réseau". Ce projet avait
+          pour but de créer un guide d'installation en anglais d'un serveur
+          Debian 12 équipé d'Apache, PostgreSQL et PHP, fonctionnel et
+          interrogeable depuis la machine hôte. Ce projet a été réalisé
+          individuellement et a impliqué la rédaction d'un guide technique
+          détaillé pour l'installation et la configuration de ces services sur
+          une machine virtuelle.
+        </p>
+
+        <h2>Objectifs</h2>
+        <p>Les objectifs principaux de ce projet étaient :</p>
+        <ul>
+          <li>
+            Rédiger un guide d'installation en anglais pour un serveur Debian 12
+            équipé d'Apache, PostgreSQL et PHP.
+          </li>
+          <li>Installer et configurer Apache pour servir des pages web.</li>
+          <li>
+            Installer et configurer PostgreSQL pour gérer les bases de données.
+          </li>
+          <li>
+            Installer et configurer PHP pour permettre l'interaction avec les
+            bases de données via des pages web.
+          </li>
+          <li>
+            Vérifier que le serveur est accessible et fonctionnel depuis la
+            machine hôte.
+          </li>
+        </ul>
+
+        <h2>Réalisation</h2>
+        <p><strong>Phase 1 : Préparation de l'Installation</strong></p>
+        <ol>
+          <li>
+            <strong>Préparation de la Machine Virtuelle :</strong>
+            <ul>
+              <li>
+                Installation de QEMU/KVM pour l'émulation de la machine
+                virtuelle.
+              </li>
+              <li>
+                Téléchargement de l'image ISO de Debian 12 et vérification de
+                son intégrité.
+              </li>
+              <li>
+                Création d'une machine virtuelle et lancement de l'installation
+                de Debian 12 en mode graphique.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Installation de Debian 12 :</strong>
+            <ul>
+              <li>
+                Choix des options d'installation : langue, localisation,
+                clavier, hostname, mot de passe root, création de l'utilisateur.
+              </li>
+              <li>
+                Configuration du partitionnement du disque et installation des
+                utilitaires système standards sans environnement graphique.
+              </li>
+              <li>Installation du gestionnaire de démarrage GRUB.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <p>
+          <strong>Phase 2 : Installation et Configuration des Services</strong>
+        </p>
+        <ol>
+          <li>
+            <strong>Installation et Configuration d'Apache :</strong>
+            <ul>
+              <li>
+                Installation du serveur web Apache via
+                <code>apt-get install apache2</code>.
+              </li>
+              <li>Démarrage et vérification du statut du service Apache.</li>
+              <li>
+                Configuration de la redirection de port pour permettre l'accès
+                au serveur depuis la machine hôte.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Installation et Configuration de PostgreSQL :</strong>
+            <ul>
+              <li>
+                Installation du serveur de base de données PostgreSQL via
+                <code>apt-get install postgresql</code>.
+              </li>
+              <li>
+                Création d'un utilisateur et d'une base de données PostgreSQL.
+              </li>
+              <li>
+                Configuration de PostgreSQL pour permettre les connexions
+                externes en modifiant les fichiers
+                <code>postgresql.conf</code> et <code>pg_hba.conf</code>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Installation et Configuration de PHP :</strong>
+            <ul>
+              <li>
+                Installation de PHP et des modules nécessaires via
+                <code>apt-get install php libapache2-mod-php php-pgsql</code>.
+              </li>
+              <li>
+                Création d'un fichier <code>info.php</code> pour tester la
+                configuration PHP.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><strong>Phase 3 : Validation et Vérification</strong></p>
+        <ol>
+          <li>
+            <strong>Vérifications Fonctionnelles :</strong>
+            <ul>
+              <li>
+                Vérification de l'accessibilité du serveur Apache depuis la
+                machine hôte en accédant à <code>http://localhost:8080</code>.
+              </li>
+              <li>
+                Connexion à la base de données PostgreSQL depuis la machine hôte
+                et exécution de requêtes SQL.
+              </li>
+              <li>
+                Accès à l'interface PhpPgAdmin pour la gestion des bases de
+                données PostgreSQL via une interface web.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Captures d'Écran et Documentation :</strong>
+            <ul>
+              <li>
+                Réalisation de captures d'écran pour documenter chaque étape de
+                l'installation.
+              </li>
+              <li>
+                Rédaction du guide d'installation en anglais en utilisant un
+                éditeur de documents tel que LibreOffice Writer ou LaTeX.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>Résultats/Conclusion</h2>
+        <p>
+          Le projet a abouti à la création d'un guide d'installation détaillé et
+          illustré, permettant de configurer un serveur Debian 12 avec Apache,
+          PostgreSQL et PHP. Le serveur ainsi configuré est accessible et
+          fonctionnel depuis la machine hôte, permettant de gérer des bases de
+          données et de servir des pages web dynamiques.
+        </p>
+        <p>
+          En conclusion, ce projet a permis de développer des compétences
+          essentielles en administration système et en rédaction technique. La
+          capacité à installer et configurer des services réseau de manière
+          autonome est une compétence clé pour tout informaticien travaillant
+          dans le domaine des infrastructures et des services web.
+        </p>
       </div>
     </main>
     <footer>
