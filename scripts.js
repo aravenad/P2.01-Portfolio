@@ -118,3 +118,35 @@ document.addEventListener('DOMContentLoaded', function() {
         location.reload(); // This is a simple way to reset, but you may prefer to reset by rearranging DOM elements based on an original order saved elsewhere
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollDownIcon = document.querySelector('.scroll-down img');
+    const goTopIcon = document.querySelector('.go-top img');
+    const projectContent = document.querySelector('.project-content');
+
+    scrollDownIcon.addEventListener('click', function () {
+        projectContent.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+
+    goTopIcon.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const projectPosition = projectContent.offsetTop;
+
+        if (scrollPosition >= projectPosition) {
+            document.querySelector('.scroll-down').classList.add('hidden');
+            document.querySelector('.go-top').classList.remove('hidden');
+        } else {
+            document.querySelector('.scroll-down').classList.remove('hidden');
+            document.querySelector('.go-top').classList.add('hidden');
+        }
+    });
+});
