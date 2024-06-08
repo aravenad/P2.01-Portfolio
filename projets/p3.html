@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <script src="../scripts.js"></script>
-    <title>Création d'une base de données</title>
+    <title>Exploitation d'une base de données</title>
   </head>
   <body>
     <header>
@@ -45,49 +45,183 @@
     <main class="project-main">
       <div class="project-header">
         <div class="project1-title">
-          <h1>Création d'une base de données</h1>
+          <h1>Création</h1><h1>d'une base de données</h1>
         </div>
         <div class="project-image">
-          <img src="../img/project1.webp" alt="project1" />
+          <img src="../img/project3.webp" alt="project1" />
         </div>
         <div class="scroll-down">
           <img src="../img/arrow-scroll-down.png" alt="Scroll Down" />
         </div>
       </div>
       <div class="project-content">
-        <div class="content-part">
-          <h2>Contexte</h2>
-          <p>
-            Le but de ce projet est de comparer les performances de différents
-            algorithmes de tri. Pour cela, nous avons implémenté les algorithmes
-            suivants :
-          </p>
-          <ul>
-            <li>Tri à bulles</li>
-            <li>Tri par sélection</li>
-            <li>Tri par insertion</li>
-            <li>Tri rapide</li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Objectifs</h2>
-          <p>Les objectifs de ce projet sont les suivants :</p>
-          <ul>
-            <li>Implémenter les algorithmes de tri</li>
-            <li>Comparer les performances des algorithmes</li>
-            <li>Écrire un rapport sur les résultats obtenus</li>
-          </ul>
-        </div>
-        <div class="content-part">
-          <h2>Résultats</h2>
-          <p>
-            Les résultats de notre étude montrent que le tri rapide est le plus
-            performant des algorithmes testés. En effet, il est capable de trier
-            un tableau de 1 million d'entiers en moins de 1 seconde, alors que
-            les autres algorithmes prennent plusieurs minutes pour effectuer la
-            même tâche.
-          </p>
-        </div>
+        <h2>Contexte</h2>
+        <p>
+          Dans le cadre de ma formation en BUT informatique, j'ai participé à un
+          projet intitulé "Création d'une base de données" portant sur le
+          naufrage du Titanic. Ce projet avait pour but de modéliser, créer et
+          interroger une base de données afin d'analyser les facteurs ayant
+          influencé la survie des passagers lors de cette tragédie historique.
+          Le projet était réalisé en binôme et impliquait plusieurs étapes : de
+          la collecte et de l'analyse des données à la création et à
+          l'interrogation de la base de données.
+        </p>
+
+        <h2>Objectifs</h2>
+        <p>Les objectifs principaux de ce projet étaient :</p>
+        <ul>
+          <li>Analyser et synthétiser le contexte du naufrage du Titanic.</li>
+          <li>
+            Modéliser une base de données en utilisant un Schéma
+            Entités-Associations (SEA).
+          </li>
+          <li>
+            Implémenter la base de données sous PostgreSQL et la peupler avec
+            des données fournies.
+          </li>
+          <li>
+            Interroger la base de données pour répondre à des questions
+            spécifiques sur les facteurs influençant la survie des passagers.
+          </li>
+        </ul>
+
+        <h2>Réalisation</h2>
+        <p><strong>Étape 1 : Analyse et Modélisation</strong></p>
+        <ol>
+          <li>
+            <strong>Analyse du Contexte :</strong>
+            <ul>
+              <li>
+                Exploration des différentes sources et webographies pour
+                comprendre le contexte du naufrage.
+              </li>
+              <li>
+                Synthèse des informations recueillies sur l'organisation du
+                sauvetage, les causes du grand nombre de décès et les erreurs
+                commises.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Règles de Gestion :</strong>
+            <ul>
+              <li>
+                Définition des règles de gestion pour structurer les données des
+                passagers, des ports d'embarquement, des cabines, des canots de
+                sauvetage, etc.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Schéma Entités-Associations (SEA) :</strong>
+            <ul>
+              <li>
+                Conception du SEA modélisant les différentes entités (passagers,
+                ports, cabines, canots) et leurs relations.
+              </li>
+              <li>
+                Justification des choix de modélisation pour chaque entité et
+                relation.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><strong>Étape 2 : Implémentation et Peuplement</strong></p>
+        <ol>
+          <li>
+            <strong>Justification du Schéma Relationnel :</strong>
+            <ul>
+              <li>
+                Vérification de la cohérence entre le SEA et le schéma
+                relationnel dérivé.
+              </li>
+              <li>
+                Rédaction d'un document justifiant l'origine des attributs, les
+                clés primaires et étrangères, et les cardinalités des relations.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Implémentation sous PostgreSQL :</strong>
+            <ul>
+              <li>
+                Création des scripts SQL pour créer et supprimer les relations
+                de la base de données.
+              </li>
+              <li>
+                Écriture des contraintes de conformité pour les relations.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Peuplement de la Base de Données :</strong>
+            <ul>
+              <li>
+                Exécution des scripts de peuplement pour insérer les données
+                dans la base.
+              </li>
+              <li>Vérification de l'intégrité des données insérées.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <p><strong>Étape 3 : Interrogation et Analyse</strong></p>
+        <ol>
+          <li>
+            <strong>Requêtes Imposées :</strong>
+            <ul>
+              <li>
+                Écriture de requêtes SQL pour déterminer le nombre de survivants
+                et de victimes selon leur classe et leur catégorie (enfant,
+                femme, homme).
+              </li>
+              <li>
+                Analyse de l'influence de la classe et de la catégorie sur les
+                taux de survie.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Rectificatif des Données :</strong>
+            <ul>
+              <li>
+                Correction des données erronées et réexécution des requêtes pour
+                obtenir des résultats significatifs.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Requêtes Complémentaires :</strong>
+            <ul>
+              <li>
+                Écriture de requêtes supplémentaires pour explorer d'autres
+                facteurs comme l'influence des embarcations de sauvetage et la
+                répartition des survivants par âge et catégorie.
+              </li>
+            </ul>
+          </li>
+        </ol>
+
+        <h2>Résultats/Conclusion</h2>
+        <p>
+          Le projet a permis de modéliser et de créer une base de données
+          complète et fonctionnelle sur le naufrage du Titanic. Les différentes
+          étapes ont permis de structurer les données de manière cohérente et de
+          répondre à des questions spécifiques sur les facteurs influençant la
+          survie des passagers. Les requêtes SQL ont révélé des tendances
+          significatives, telles que l'influence de la classe et du genre sur
+          les taux de survie.
+        </p>
+        <p>
+          En conclusion, ce projet a démontré l'importance d'une bonne
+          modélisation des données et de l'utilisation des bases de données
+          relationnelles pour analyser des événements complexes. Les compétences
+          acquises au cours de ce projet, telles que la modélisation,
+          l'implémentation et l'interrogation de bases de données, sont
+          essentielles pour tout informaticien travaillant avec des systèmes de
+          gestion de bases de données.
+        </p>
       </div>
     </main>
     <footer>
