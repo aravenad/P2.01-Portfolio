@@ -665,6 +665,16 @@ div.project-image img {
   text-align: justify;
 }
 
+.project-content ol {
+  list-style-type: decimal;
+  padding: 0 0 0 20px;
+  color: #666;
+}
+
+strong {
+  color: #666;
+}
+
 .project-content ul {
   list-style-type: none;
   padding: 0;
